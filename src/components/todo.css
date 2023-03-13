@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+   background: #8d99ae;
+}
+#head{
+   background-color: #2b2d42;
+   margin: 0;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+}
+h1{
+   display: flex;
+   padding-left: 1em;
+   height: 2em;
+   margin: 0;
+   margin-left: 1em;
+   width: 150px;
+   align-items: center;
+   justify-content: left;
+   background-color: #2b2d42;
+   color: #8d99ae;
+   font-family: Smokum, sans-serif;
+   font-size: 1em;
+   
+}
+#inputArea{
+   display: flex;
+   justify-content: center;
+   font-family: Arial, Helvetica, sans-serif;
+   gap: 0.6em;
+   height: 4em;
+   background-color: #8d99ae;
+   align-items: center;
+   color: #edf2f4;
+}
+#input{
+   background-color: #edf2f4;
+   color: black;
+   height: 2em;
+   width: 15em;
+   border-radius: 25px;
+   padding-left: 1em;
+   padding-right: 1em;
+   border: none;
+}
+#input:focus{
+   outline: none !important;
+   border: 1px solid #d90429;
+}
+#input::placeholder{
+   color: black;
+   text-align: center;
+}
+#input:focus::placeholder{
+   color: transparent;
+}
+button{
+   color: black;
+   background-color: #edf2f4;
+   border: none;
+   transition: 0.5s;
+   height: 2em;
+   width: 2em;
+}
+#addBtn{
+   height: 2.2em;
+   width: 5em;
+   margin-top: 0.2em;
+   border-radius: 25px;
+}
+button:hover{
+   cursor: pointer;
+   color: #d90429;
+}
+#list{
+   background-color: #8d99ae;
+   padding-top: 1em;
+}
+.taskList{
+   margin-top: 2em;
+   margin-left: auto;
+   margin-right: auto;
+   width: 70%;
+   background-color: #edf2f4;
+   border-radius: 25px;
+   display: flex;
+   padding: 2em;
+   align-items: center;
+   
+}
+#deleteBtn{
+   background-color: #d90429;
+   position: absolute;
+   right: 17%;
+
+}
+.task{
+   line-break: anywhere;
+   padding-right: 1em;
+   padding-left: 1em;
+   width: 85%;
+   font-family: Smokum, sans-serif;
+}
+#urgency{
+   background-color: #edf2f4;
+   color:black;
+   height: 2.2em;
+   width: 15em;
+   text-align: center;
+   border-radius: 25px;
+}
+
+#urgency .urgency{
+   background-color: #d90429;
+}
+#urgency .normalUrgency{
+   background-color: #cd7483;
+}
+
+#list .urgency{
+   border-right: 2px solid #d90429;
+}
+#list .normalUrgency{
+   border-right: 2px solid #cd7483;
+}
+#areaTasksRemoved{
+   background-color: #edf2f4;
+   display: flex;
+   width: 70%;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 2em;
+   border-radius: 25px;
+  
+   justify-content: space-between;
+   padding: 2em;
+}
+#clearTasksRemoved{
+   background-color: #8d99ae;
+   width: 60px;
+   height: 40px;
+   border: 1px solid black;
+
+   right: 20%;
+}
+#tasksRemoved{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 1.3em;
+   padding-right: 2em;
+   padding-left: 20em;
+   line-break: anywhere;
+}
+#quantityTasksRemoved{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+#removedTasksLength{
+   font-size: 25px;
+   font-weight: 600;
+}
+#removedTasksInformation{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 2em;
+}
+#showRemovedTasks{
+   margin-left: 2em;
+   margin-bottom: 1.6em;
+   background-color: #2b2d42;
+   width: 20px;
+   height: 20px;
+}
+.taskRemoved{
+   font-family: Smokum, sans-serif;
+}
+#percentageTasks{
+   padding: 1em;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 1em;
+}
+#percentageArea{
+   border: 1px solid black;
+   width: 70%;
+   margin: auto;
+   height: 30px;
+   border-radius: 50px;
+   justify-content: start;
+   align-items: center;
+}
+#percentageFiller{
+   height: 100%;
+   background-color: #d90429;
+   border-radius: inherit;
+   text-align: center;
+}
+#percentageCompleted{
+   background-color: none;
+   color: #edf2f4;
+   font-weight: bold;
+   text-align: center;
+   padding-right: 1em;
+}
